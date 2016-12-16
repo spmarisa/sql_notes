@@ -22,3 +22,7 @@
 SELECT u.id, u.email, t.name
 FROM users AS u, topics AS t
 WHERE u.id=1 AND t.CustomerID =o.CustomerID;
+
+SELECT o.OrderID, o.OrderDate, c.CustomerName
+FROM Customers AS c, Orders AS o
+WHERE c.CustomerName="Around the Horn" AND c.CustomerID=o.CustomerID;
